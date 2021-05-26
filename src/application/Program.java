@@ -9,7 +9,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Program {
-	
+
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class Program {
 				System.out.print("Target: ");
 				ChessPosition target = UI.readChessPosition(sc);
 
-				//ChessPiece capturedPiece = match.performMove(origin, target);
+				ChessPiece capturedPiece = match.performMove(origin, target);
 			} catch (ChessException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
